@@ -17,8 +17,8 @@
 |
 */
 
-$config['active']			= TRUE;
-$config['clean_output']		= TRUE;
-$config['layout_dir'] 		= 'layouts/';
-$config['layout']			= 'default';
-$config['layout_var']		= 'content';
+$config['active']           = TRUE;
+$config['clean_output']     = TRUE;
+$config['layout_dir']       = 'layouts/';
+$config['layout']           = 'default';
+$config['layout_var']       = 'content';

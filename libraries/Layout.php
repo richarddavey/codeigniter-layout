@@ -16,11 +16,11 @@ class Layout {
 	 * Default values
 	 *
      */
-	private $active 		= TRUE;
-	private $layout 		= 'default';
-	private $layout_var 	= 'content';
-	private $layout_dir 	= 'layouts/';
-	private $clean_output 	= FALSE;
+	private $active         = TRUE;
+	private $layout         = 'default';
+	private $layout_var     = 'content';
+	private $layout_dir     = 'layouts/';
+	private $clean_output   = FALSE;
 	
 	/**
 	 * Constructor

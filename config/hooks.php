@@ -11,10 +11,10 @@
 */
 
 $hook['display_override'][] = array(
-	'class'    => 'Layout',
-	'function' => 'output',
-	'filename' => 'Layout.php',
-	'filepath' => 'libraries'
+    'class'    => 'Layout',
+    'function' => 'output',
+    'filename' => 'Layout.php',
+    'filepath' => 'libraries'
 );
 
 /* End of file hooks.php */
