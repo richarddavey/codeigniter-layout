@@ -1,6 +1,6 @@
 # CodeIgniter-Layout
 
-CodeIgniter-Layout is a Layout library that helps your build complex and consistant views with CodeIgniter.
+CodeIgniter-Layout is a Layout library that helps your build complex and consistent views with CodeIgniter.
 
 
 ## Requirements
