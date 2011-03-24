@@ -78,6 +78,19 @@ class Layout {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Disable output cleaning
+	 *
+	 * @return 	void
+	 */
+	public function disable_clean_output()
+	{
+		// disable layout
+		$this->clean_output = false;
+	}
+	
+	// --------------------------------------------------------------------
+	
+	/**
 	 * Disable layout
 	 *
 	 * @return 	void
@@ -134,10 +147,10 @@ class Layout {
 		$buffer = $CI->output->get_output();
 			
 		// does layout exist
-		if ($CI->layout->active AND $CI->layout->layout AND file_exists(APPPATH . $CI->layout->layout . $CI->layout->layout . EXT)) {
+		if ($CI->layout->active AND $CI->layout->layout AND file_exists(APPPATH . $CI->layout->layout_dir . $CI->layout->layout . EXT)) {
 		
 			// return layout
-			$buffer = $CI->load->view('../' . $CI->layout->layout . $CI->layout->layout . EXT, array($CI->layout->layout_var => $buffer), true);
+			$buffer = $CI->load->view('../' . $CI->layout->layout_dir . $CI->layout->layout . EXT, array($CI->layout->layout_var => $buffer), true);
 		}
 		
 		// if whitespace compression is needed
