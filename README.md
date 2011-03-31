@@ -10,8 +10,8 @@ CodeIgniter-Layout is a Layout library that helps your build complex and consist
 
 ## Example
 
-// set layout
-$this->layout->set_layout('example');
-
-// disable layout
-$this->layout->disable_layout();
+	// set layout
+	$this->layout->set_layout('example');
+	
+	// disable layout
+	$this->layout->disable_layout();
