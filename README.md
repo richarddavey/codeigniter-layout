@@ -5,5 +5,13 @@ CodeIgniter-Layout is a Layout library that helps your build complex and consist
 
 ## Requirements
 
-1. PHP 5.1+
-2. CodeIgniter 1.6.x - 2.0-dev
+* CodeIgniter 2.0.x
+
+
+## Example
+
+// set layout
+$this->layout->set_layout('example');
+
+// disable layout
+$this->layout->disable_layout();
