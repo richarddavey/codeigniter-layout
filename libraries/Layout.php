@@ -4,10 +4,10 @@
  *
  * This class manages the view insertion into a layout template
  *
+ * @package		Layout
+ * @version		1.0
  * @author 		Richard Davey <info@richarddavey.com>
  * @copyright 	Copyright (c) 2011, Richard Davey
- * @package		CodeIgniter
- * @subpackage	Libraries
  * @link		https://github.com/richarddavey/codeigniter-layout
  */
 class Layout {
