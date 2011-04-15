@@ -72,7 +72,7 @@ class Layout {
 	public function __get($name) 
 	{
 		// get variable
-		return isset($this->$name) ? $this->$name : null;
+		return isset($this->$name) ? $this->$name : NULL;
 	}
 	
 	// --------------------------------------------------------------------
@@ -85,7 +85,7 @@ class Layout {
 	public function disable_clean_output()
 	{
 		// disable layout
-		$this->clean_output = false;
+		$this->clean_output = FALSE;
 	}
 	
 	// --------------------------------------------------------------------
@@ -98,7 +98,7 @@ class Layout {
 	public function disable_layout()
 	{
 		// disable layout
-		$this->active = false;
+		$this->active = FALSE;
 	}
 	
 	// --------------------------------------------------------------------
@@ -111,7 +111,7 @@ class Layout {
 	public function enable_layout()
 	{
 		// enable layout
-		$this->active = true;
+		$this->active = TRUE;
 	}
 	
 	// --------------------------------------------------------------------
@@ -150,7 +150,7 @@ class Layout {
 		if ($CI->layout->active AND $CI->layout->layout AND file_exists(APPPATH . $CI->layout->layout_dir . $CI->layout->layout . EXT)) {
 		
 			// return layout
-			$buffer = $CI->load->view('../' . $CI->layout->layout_dir . $CI->layout->layout . EXT, array($CI->layout->layout_var => $buffer), true);
+			$buffer = $CI->load->view('../' . $CI->layout->layout_dir . $CI->layout->layout . EXT, array($CI->layout->layout_var => $buffer), TRUE);
 		}
 		
 		// if whitespace compression is needed
