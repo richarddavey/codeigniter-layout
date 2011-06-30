@@ -131,6 +131,20 @@ class Layout {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Set layout directory
+	 *
+	 * @param 	string $layout_dir
+	 * @return 	void
+	 */
+	public function set_layout_dir($layout_dir)
+	{
+		// set layout directory
+		$this->layout_dir = $layout_dir;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
 	 * Output with layout
 	 *
 	 * Remove useless whitespace from generated HTML and construct page from
