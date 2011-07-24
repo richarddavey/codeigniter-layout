@@ -5,7 +5,7 @@
  * This class manages the view insertion into a layout template
  *
  * @package		Layout
- * @version		1.0
+ * @version		1.1
  * @author 		Richard Davey <info@richarddavey.com>
  * @copyright 	Copyright (c) 2011, Richard Davey
  * @link		https://github.com/richarddavey/codeigniter-layout
@@ -130,9 +130,9 @@ class Layout {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set layout
+	 * Set file extension 
 	 *
-	 * @param 	string $layout
+	 * @param 	string $ext
 	 * @return 	void
 	 */
 	public function set_ext($ext)
