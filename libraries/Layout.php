@@ -21,7 +21,7 @@ class Layout {
 	private $layout_var     = 'content';
 	private $layout_dir     = 'layouts/';
 	private $clean_output   = FALSE;
-	
+	private $ext            = EXT;
 	/**
 	 * Constructor
 	 *
@@ -127,7 +127,35 @@ class Layout {
 		// set layout
 		$this->layout = $layout;
 	}
-	
+	// --------------------------------------------------------------------
+
+	/**
+	 * Set layout
+	 *
+	 * @param 	string $layout
+	 * @return 	void
+	 */
+	public function set_ext($ext)
+	{
+		// set layout
+		$this->ext = $ext;
+	}
+        
+	// --------------------------------------------------------------------
+
+	/**
+	 * Set layout directory
+	 *
+	 * @param 	string $layout_dir
+	 * @return 	void
+	 */
+	public function set_layout_dir($layout_dir)
+	{
+		// set layout directory
+		$this->layout_dir = $layout_dir;
+	}
+	        
+        
 	// --------------------------------------------------------------------
 
 	/**
@@ -147,10 +175,10 @@ class Layout {
 		$buffer = $CI->output->get_output();
 			
 		// does layout exist
-		if ($CI->layout->active AND $CI->layout->layout AND file_exists(APPPATH . $CI->layout->layout_dir . $CI->layout->layout . EXT)) {
+		if ($CI->layout->active AND $CI->layout->layout AND file_exists(APPPATH . $CI->layout->layout_dir . $CI->layout->layout . $CI->layout->ext)) {
 		
 			// return layout
-			$buffer = $CI->load->view('../' . $CI->layout->layout_dir . $CI->layout->layout . EXT, array($CI->layout->layout_var => $buffer), TRUE);
+			$buffer = $CI->load->view('../' . $CI->layout->layout_dir . $CI->layout->layout . $CI->layout->ext, array($CI->layout->layout_var => $buffer), TRUE);
 		}
 		
 		// if whitespace compression is needed
