@@ -21,7 +21,7 @@ class Layout {
 	private $layout_var     = 'content';
 	private $layout_dir     = 'layouts/';
 	private $clean_output   = FALSE;
-	private $ext            = EXT;
+	private $ext            = '.php';
 	/**
 	 * Constructor
 	 *
